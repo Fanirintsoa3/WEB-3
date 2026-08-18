@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Menu</title>
+  <script>
+    if (sessionStorage.getItem("authentifie") !== "true") {
+      alert("Accès refusé.");
+      window.location.href = "index.html";
+    }
+  </script>
+  <style>
+    body {
+      font-family: Arial;
+      padding: 20px;
+    }
+    .link {
+      display: block;
+      color: blue;
+      margin: 10px 0;
+      cursor: pointer;
+      text-decoration: underline;
+    }
+    button {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Choisis une action :</h2>
+  <span class="link" onclick="window.open('tableau.html', '_blank', 'width=600,height=400')">📊 Voir le tableau</span>
+  <span class="link" onclick="window.open('photo.html', '_blank', 'width=600,height=400')">🖼️ Voir la photo</span>
+  <span class="link" onclick="window.open('aide.html', '_blank', 'width=600,height=400')">🆘 Aide</span>
+  <span class="link" onclick="window.open('infos.html', '_blank', 'width=600,height=400')">ℹ️ Infos</span>
+
+  <button onclick="window.close()">← Retour</button>
+</body>
+</html>

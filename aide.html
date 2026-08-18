@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Aide</title>
+  <script>
+    if (sessionStorage.getItem("authentifie") !== "true") {
+      alert("Accès refusé.");
+      window.location.href = "index.html";
+    }
+  </script>
+  <style>
+    button {
+      margin-bottom: 10px;
+      padding: 5px 10px;
+    }
+  </style>
+</head>
+<body>
+  <button onclick="window.close()">← Retour</button>
+
+  <h2>Aide</h2>
+  <p>Pour toute assistance technique, veuillez contacter l’administrateur ou vous référer à la documentation fournie.</p>
+</body>
+</html>

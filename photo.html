@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Photo</title>
+  <script>
+    if (sessionStorage.getItem("authentifie") !== "true") {
+      alert("Accès refusé.");
+      window.location.href = "index.html";
+    }
+  </script>
+  <style>
+    button {
+      margin-bottom: 10px;
+      padding: 5px 10px;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <button onclick="window.close()">← Retour</button>
+
+  <h2>Photo</h2>
+  <img src="image.jpg" alt="Exemple de photo" width="300">
+
+</body>
+</html>

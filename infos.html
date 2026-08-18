@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Informations</title>
+  <script>
+    if (sessionStorage.getItem("authentifie") !== "true") {
+      alert("Accès refusé.");
+      window.location.href = "index.html";
+    }
+  </script>
+  <style>
+    button {
+      margin-bottom: 10px;
+      padding: 5px 10px;
+    }
+  </style>
+</head>
+<body>
+  <button onclick="window.close()">← Retour</button>
+
+  <h2>Informations Générales</h2>
+  <p>Bienvenue sur notre système sécurisé. Cette plateforme permet d’accéder à différents modules selon vos besoins.</p>
+</body>
+</html>

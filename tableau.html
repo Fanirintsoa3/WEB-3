@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Tableau</title>
+  <script>
+    if (sessionStorage.getItem("authentifie") !== "true") {
+      alert("Accès refusé.");
+      window.location.href = "index.html";
+    }
+  </script>
+  <style>
+    button {
+      margin-bottom: 10px;
+      padding: 5px 10px;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    th, td {
+      border: 1px solid #000;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <button onclick="window.close()">← Retour</button>
+
+  <h2>Tableau des Données</h2>
+  <table>
+    <tr><th>Nom</th><th>Valeur</th></tr>
+    <tr><td>Température</td><td>25°C</td></tr>
+    <tr><td>Pression</td><td>1.2 bar</td></tr>
+  </table>
+
+</body>
+</html>
