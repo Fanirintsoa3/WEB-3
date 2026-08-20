@@ -7,7 +7,7 @@ window.onpopstate = function () {
 
 // Vérification du mot de passe
 function verifierMotDePasse() {
-  const motDePasseCorrect = "FITIA";
+  const motDePasseCorrect = "FITIAVANA";
   const motDePasseSaisi = document.getElementById("password").value;
 
   if (motDePasseSaisi === motDePasseCorrect) {
